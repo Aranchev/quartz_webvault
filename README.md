@@ -1,1 +1,2 @@
-https://aranchev.github.io/quartz_webvault/
+`/save.sh ""`
+`npx quartz build --serve`
