@@ -83,7 +83,10 @@ plugins:
   - source: "@quartz-community/latex"
     enabled: true
     options:
-      renderEngine: katex
+      renderEngine: mathjax
+      mathJaxOptions:
+        output:
+          font: mathjax-dejavu
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
@@ -252,6 +255,18 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/recent-notes
+    enabled: false
+    options:
+      limit: 3
+      linkToMore: false
+      showTags: true
+      hideTagPages: false
+      hideFolderPages: false
+    order: 50
+    layout:
+      position: afterBody
+      priority: 50
 layout:
   groups:
     toolbar:

@@ -1,3 +1,5 @@
 @use "./variables.scss" as *;
 
+
 // put your custom CSS here!
+ article { p, li, ol, ul, blockquote { font-size: 1.3rem;line-height: 1.3;  } }
